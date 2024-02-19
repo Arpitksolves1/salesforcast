@@ -1,0 +1,28 @@
+.ks_graph_container{
+    box-shadow: 1px 0px 4px #7d7d7d;
+    padding: 20px;
+}
+
+.ks_header{
+    display: flex;
+    position: relative;
+    padding-bottom: 5px;
+}
+.o_inner_group.grid .o_cell.flex-grow-1.flex-sm-grow-0{
+width: 100% !important;
+}
+@media  screen and (min-width: 576px){
+.o_form_view .o_inner_group {
+    grid-template-columns: fit-content(100%) 1fr !important;
+}
+}
+
+
+.o_inner_group.grid .o_cell.flex-grow-1.flex-sm-grow-0 select{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

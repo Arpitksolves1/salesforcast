@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ks_is_quantity" model="ir.ui.view">
+            <field name="name">ks.sales.forecast</field>
+            <field name="model">ks.sales.forecast</field>
+            <field name="inherit_id" ref="ks_sales_forecast.ks_forecast_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group/field[@name='ks_forecast_period']" position="after">
+                    <field name="ks_is_qty" string="Sales/Quantity"/>
+                </xpath>
+            </field>
+        </record>
+</odoo>
